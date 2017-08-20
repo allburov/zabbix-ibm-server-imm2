@@ -1,8 +1,17 @@
+This repo contains new version for this: https://share.zabbix.com/cat-server-hardware/server-with-imm-imm2
+
 
 # Install
 - Copy getFanSpeed.rb to "externalscripts" on Zabbix server
 - Make script executebly (chmod +x getFanSpeed.rb)
 - Install Ruby on Zabbix server
+- **zabbix<3.0** - manual create value mapping [**IMM2-systemhealt**](https://github.com/allburov/zabbix-ibm-server-imm2/blob/master/Template%20IBM%20-%20IMM2%20SNMP.xml#L743-L765)
+  - nonRecoverable=0
+  - Critical=2
+  - nonCritical=4
+  - normal=255
+- Import template
+
 
 # Info
 - Zabbix 3.0 compatibility
