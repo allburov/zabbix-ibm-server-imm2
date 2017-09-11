@@ -720,7 +720,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template IBM - IMM2 SNMP:systemHealthStat.last(0)}=2</expression>
+            <expression>{Template IBM - IMM2 SNMP:systemHealthStat.last(0)}=4</expression>
             <name>System state {HOST.NAME} is nonCritical</name>
             <url/>
             <status>0</status>
