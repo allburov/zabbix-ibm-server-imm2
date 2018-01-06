@@ -4,7 +4,8 @@ This repo contains new version for this: https://share.zabbix.com/cat-server-har
 # Install
 - Copy getFanSpeed.rb to "externalscripts" on Zabbix server
 - Make script executebly (chmod +x getFanSpeed.rb)
-- Install Ruby on Zabbix server
+- [Install Ruby](https://www.ruby-lang.org/en/documentation/installation) on Zabbix server
+- Ensure, that you have `snmpget` program installed, e.g. for [Debian] (https://wiki.debian.org/SNMP) or Centos: `rpm -ql net-snmp-utils |grep bin`
 - **zabbix<3.0** - manual create value mapping [**IMM2-systemhealt**](https://github.com/allburov/zabbix-ibm-server-imm2/blob/master/Template%20IBM%20-%20IMM2%20SNMP.xml#L743-L765)
   - nonRecoverable=0
   - Critical=2
