@@ -11,6 +11,7 @@ This repo contains new version for this: https://share.zabbix.com/cat-server-har
   - Critical=2
   - nonCritical=4
   - normal=255
+- Create global or host macros - `{$SNMP_COMMUNITY}` with your value
 - Import template
 
 
